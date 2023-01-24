@@ -1,0 +1,229 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8343,        221]
+NotebookOptionsPosition[      6455,        179]
+NotebookOutlinePosition[      6858,        195]
+CellTagsIndexPosition[      6815,        192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{"StringDelete", "[", 
+   RowBox[{"\"\<Module 2: Foundations of the U.S. Urban System\n \>\"", ",", 
+    RowBox[{"{", "\"\<:\>\"", "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.883566895315772*^9, 3.883566941840609*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"4862faa1-4b46-4494-a85e-d6c5d6d8ed66"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Module\"\>", ",", "\<\"2\"\>", ",", "\<\"Foundations\"\>", 
+   ",", "\<\"of\"\>", ",", "\<\"the\"\>", ",", "\<\"U.S.\"\>", 
+   ",", "\<\"Urban\"\>", ",", "\<\"System\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8835669341860437`*^9, 3.8835669422812867`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"b66f9c11-d941-491a-ac28-367f6276a2c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{"StringDelete", "[", 
+   RowBox[{
+    RowBox[{
+    "ToLowerCase", "[", 
+     "\"\<Module 2: Foundations of the U.S. Urban System\n \>\"", "]"}], ",", 
+    RowBox[{"{", "\"\<:\>\"", "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.883566895315772*^9, 3.8835669611689587`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"3dc8956b-96a5-4578-add3-84207be45261"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"module\"\>", ",", "\<\"2\"\>", ",", "\<\"foundations\"\>", 
+   ",", "\<\"of\"\>", ",", "\<\"the\"\>", ",", "\<\"u.s.\"\>", 
+   ",", "\<\"urban\"\>", ",", "\<\"system\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8835669614798574`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"6a2f533a-daaa-4255-ba9c-74a6fb4ba572"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringRiffle", "[", 
+  RowBox[{
+   RowBox[{"StringSplit", "[", 
+    RowBox[{"StringDelete", "[", 
+     RowBox[{
+      RowBox[{
+      "ToLowerCase", "[", 
+       "\"\<Module 2: Foundations of the U.S. Urban System\n \>\"", "]"}], 
+      ",", 
+      RowBox[{"{", "\"\<:\>\"", "}"}]}], "]"}], "]"}], ",", "\"\<-\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.883566963954999*^9, 3.883566970105546*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"c5832ab9-3ff3-42d1-aad8-1677d286feaa"],
+
+Cell[BoxData["\<\"module-2-foundations-of-the-u.s.-urban-system\"\>"], \
+"Output",
+ CellChangeTimes->{3.883566970540657*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"c8da6588-cef8-4ed2-b77f-76de4ec1be1b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\\Documents\
+\\\\urban-geography\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.883567010860854*^9, 3.8835670376487412`*^9}, {
+  3.8835670731149673`*^9, 3.883567090948848*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"eb5b5fec-370d-4623-9259-8af48d63a27c"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\
+\\Documents\\\\urban-geography\"\>"], "Output",
+ CellChangeTimes->{3.8835670926720057`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"35946b0f-2bd4-435a-8a79-362922704f4b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8835670939727125`*^9, 3.883567095171343*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"f8851102-ab89-4b54-9ee4-dc01627d7015"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\
+\\Documents\\\\urban-geography\"\>"], "Output",
+ CellChangeTimes->{3.883567095440338*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"8c2d10e9-2fbf-4446-b1f7-f83b5f225335"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileNameJoin", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Directory", "[", "]"}], ",", 
+    RowBox[{"StringRiffle", "[", 
+     RowBox[{
+      RowBox[{"StringSplit", "[", 
+       RowBox[{"StringDelete", "[", 
+        RowBox[{
+         RowBox[{
+         "ToLowerCase", "[", 
+          "\"\<Module 2: Foundations of the U.S. Urban System\n \>\"", "]"}], 
+         ",", 
+         RowBox[{"{", "\"\<:\>\"", "}"}]}], "]"}], "]"}], ",", "\"\<-\>\""}], 
+     "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.883567096365224*^9, 3.8835671048119273`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"73e609b6-bcc8-4c33-b684-98e9a4b41de9"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\
+\\Documents\\\\urban-geography\\\\module-2-foundations-of-the-u.s.-urban-\
+system\"\>"], "Output",
+ CellChangeTimes->{3.883567105152747*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"5992ad5c-9d8b-4fce-85eb-cd0c3806e6a7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateDirectory", "[", 
+  RowBox[{"File", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Directory", "[", "]"}], ",", 
+      RowBox[{"StringRiffle", "[", 
+       RowBox[{
+        RowBox[{"StringSplit", "[", 
+         RowBox[{"StringDelete", "[", 
+          RowBox[{
+           RowBox[{
+           "ToLowerCase", "[", 
+            "\"\<Module 2: Foundations of the U.S. Urban System\n \>\"", 
+            "]"}], ",", 
+           RowBox[{"{", "\"\<:\>\"", "}"}]}], "]"}], "]"}], ",", 
+        "\"\<-\>\""}], "]"}]}], "}"}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.883567108669587*^9, 3.883567168934805*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"d7c540b6-6092-4dde-b7e8-9114a60d90c1"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\
+\\Documents\\\\urban-geography\\\\module-2-foundations-of-the-u.s.-urban-\
+system\"\>"], "Output",
+ CellChangeTimes->{3.8835671693014345`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"af63d66b-ccd0-4771-9fbd-b0816cde3d5a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", 
+  "\"\<C:\\\\Users\\\\burbery1\\\\OneDrive - Marshall University\\\\Documents\
+\\\\urban-geography\\\\module-2-foundations-of-the-u.s.-urban-system\>\"", 
+  "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[13]:=",ExpressionUUID->"ffe8893b-42cd-4641-8f81-5c4e4bbea676"]
+},
+WindowSize->{1440., 831.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"941c38c6-792f-467e-b5b7-6e07e79043d5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 360, 6, 48, "Input",ExpressionUUID->"4862faa1-4b46-4494-a85e-d6c5d6d8ed66"],
+Cell[943, 30, 383, 6, 32, "Output",ExpressionUUID->"b66f9c11-d941-491a-ac28-367f6276a2c5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1363, 41, 413, 9, 48, "Input",ExpressionUUID->"3dc8956b-96a5-4578-add3-84207be45261"],
+Cell[1779, 52, 357, 6, 32, "Output",ExpressionUUID->"6a2f533a-daaa-4255-ba9c-74a6fb4ba572"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2173, 63, 504, 13, 48, "Input",ExpressionUUID->"c5832ab9-3ff3-42d1-aad8-1677d286feaa"],
+Cell[2680, 78, 202, 3, 32, "Output",ExpressionUUID->"c8da6588-cef8-4ed2-b77f-76de4ec1be1b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2919, 86, 363, 6, 28, "Input",ExpressionUUID->"eb5b5fec-370d-4623-9259-8af48d63a27c"],
+Cell[3285, 94, 248, 3, 32, "Output",ExpressionUUID->"35946b0f-2bd4-435a-8a79-362922704f4b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3570, 102, 204, 3, 28, "Input",ExpressionUUID->"f8851102-ab89-4b54-9ee4-dc01627d7015"],
+Cell[3777, 107, 247, 3, 32, "Output",ExpressionUUID->"8c2d10e9-2fbf-4446-b1f7-f83b5f225335"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4061, 115, 658, 17, 48, "Input",ExpressionUUID->"73e609b6-bcc8-4c33-b684-98e9a4b41de9"],
+Cell[4722, 134, 298, 4, 32, "Output",ExpressionUUID->"5992ad5c-9d8b-4fce-85eb-cd0c3806e6a7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5057, 143, 760, 19, 48, "Input",ExpressionUUID->"d7c540b6-6092-4dde-b7e8-9114a60d90c1"],
+Cell[5820, 164, 300, 4, 32, "Output",ExpressionUUID->"af63d66b-ccd0-4771-9fbd-b0816cde3d5a"]
+}, Open  ]],
+Cell[6135, 171, 316, 6, 28, "Input",ExpressionUUID->"ffe8893b-42cd-4641-8f81-5c4e4bbea676"]
+}
+]
+*)
+
